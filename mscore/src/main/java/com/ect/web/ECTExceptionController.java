@@ -19,7 +19,7 @@ public class ECTExceptionController {
 
     @RequestMapping("/json")
     public String json() throws MyException {
-        throw new MyException("发生错误2");
+        throw new MyException("发生错误3");
     }
 
     @RequestMapping("/")
