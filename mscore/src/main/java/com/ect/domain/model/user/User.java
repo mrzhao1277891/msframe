@@ -1,4 +1,4 @@
-package com.ect.domain.user;
+package com.ect.domain.model.user;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,7 +19,14 @@ public class User {
     @Column(nullable = false)
     private String age;
 
-    public User(String name, String age) {
+    public User(String name, String age) throws Exception{
+        //守卫验证
+        if(name == "" || name == null){
+            throw new Exception("用户姓名不能为空");
+        }
+        if(age == "" || age == null){
+            throw new Exception("用户年龄不能为空");
+        }
         this.name = name;
         this.age = age;
     }

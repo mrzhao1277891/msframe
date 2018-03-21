@@ -1,4 +1,4 @@
-package com.ect.domain.user;
+package com.ect.domain.model.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
