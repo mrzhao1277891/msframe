@@ -1,4 +1,4 @@
-package com.ect.integration.dto;
+package com.ect.integration.rpcService.dto;
 
 /**
  * Created by zhaojun on 2018/1/26.

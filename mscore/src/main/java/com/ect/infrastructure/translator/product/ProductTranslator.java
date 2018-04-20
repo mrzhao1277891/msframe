@@ -1,4 +1,4 @@
-package com.ect.infrastructure.translators.product;
+package com.ect.infrastructure.translator.product;
 
 /**
  * Created by zhaojun on 2018/2/23.

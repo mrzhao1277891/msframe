@@ -1,4 +1,4 @@
-package com.ect.infrastructure.translators.product;
+package com.ect.infrastructure.translator.product;
 
 import com.ect.domain.iRemoteServices.ProductService;
 import com.ect.domain.model.product.Product;

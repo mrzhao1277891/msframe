@@ -1,5 +1,6 @@
 package com.ect.domain.model.productOrder;
 
+import com.ect.domain.model.QuoteSlip.QuoteSlip;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductOrderFactory {
 
-    public ProductOrder createProductOrder(){
+    public ProductOrder createProductOrder(QuoteSlip quoteSlip){
         return new ProductOrder();
     }
 }

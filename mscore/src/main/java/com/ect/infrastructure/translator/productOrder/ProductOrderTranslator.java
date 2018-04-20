@@ -1,7 +1,7 @@
-package com.ect.infrastructure.translators.productOrder;
+package com.ect.infrastructure.translator.productOrder;
 
 import com.ect.domain.model.productOrder.ProductOrder;
-import com.ect.infrastructure.client.geckoClient.dto.UnderWrittingResponseDto;
+import com.ect.infrastructure.client.htttpClient.geckoClient.dto.UnderWrittingResponseDto;
 import org.springframework.stereotype.Service;
 
 /**

@@ -1,4 +1,4 @@
-package com.ect.infrastructure.translators.user;
+package com.ect.infrastructure.translator.user;
 
 import com.ect.domain.iRemoteServices.ProductService;
 

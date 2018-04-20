@@ -2,10 +2,10 @@ package com.ect.infrastructure.iRemoteService;
 
 import com.ect.domain.iDomainServices.UnderWrittingService;
 import com.ect.domain.model.productOrder.ProductOrder;
-import com.ect.infrastructure.client.geckoClient.UnderWrittingClient;
-import com.ect.infrastructure.client.geckoClient.dto.UnderWrittingRequestDto;
-import com.ect.infrastructure.client.geckoClient.dto.UnderWrittingResponseDto;
-import com.ect.infrastructure.translators.productOrder.ProductOrderTranslator;
+import com.ect.infrastructure.client.htttpClient.geckoClient.UnderWrittingClient;
+import com.ect.infrastructure.client.htttpClient.geckoClient.dto.UnderWrittingRequestDto;
+import com.ect.infrastructure.client.htttpClient.geckoClient.dto.UnderWrittingResponseDto;
+import com.ect.infrastructure.translator.productOrder.ProductOrderTranslator;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

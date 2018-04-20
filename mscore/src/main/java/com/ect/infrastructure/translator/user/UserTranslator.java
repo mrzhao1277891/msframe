@@ -1,4 +1,4 @@
-package com.ect.infrastructure.translators.user;
+package com.ect.infrastructure.translator.user;
 
 /**
  * Created by zhaojun on 2018/2/23.
