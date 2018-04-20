@@ -1,4 +1,4 @@
-package com.ect.domain.iDomainServices;
+package com.ect.domain.domainServices;
 
 import com.ect.domain.model.productOrder.ProductOrder;
 

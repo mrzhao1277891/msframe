@@ -1,6 +1,7 @@
 package com.ect.infrastructure.translator.productOrder;
 
 import com.ect.domain.model.productOrder.ProductOrder;
+import com.ect.infrastructure.client.htttpClient.geckoClient.dto.UnderWrittingRequestDto;
 import com.ect.infrastructure.client.htttpClient.geckoClient.dto.UnderWrittingResponseDto;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,12 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ProductOrderTranslator {
-    public ProductOrder translateToProductOrder(ProductOrder productOrder, UnderWrittingResponseDto underWrittingResponseDto){
+
+    public static UnderWrittingRequestDto translateToDto(ProductOrder productOrder){
+        return new UnderWrittingRequestDto();
+    }
+
+    public static ProductOrder translateToProductOrder(ProductOrder productOrder, UnderWrittingResponseDto underWrittingResponseDto){
 
         return productOrder;
     }
