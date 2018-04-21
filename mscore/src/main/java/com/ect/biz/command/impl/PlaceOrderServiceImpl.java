@@ -5,6 +5,7 @@ import com.ect.domain.model.QuoteSlip.QuoteSlip;
 import com.ect.domain.model.productOrder.ProductOrder;
 import com.ect.domain.model.productOrder.ProductOrderFactory;
 import com.ect.domain.model.productOrder.ProductOrderRepository;
+import com.ect.domain.remoteServices.ProductOrderRemoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -15,9 +16,12 @@ public class PlaceOrderServiceImpl implements PlaceOrderService{
     ProductOrderFactory productOrderFactory;
     @Autowired
     ProductOrderRepository productOrderRepository;
+    @Autowired
+    ProductOrderRemoteService productOrderRemoteService;
 
     public ProductOrder placeOrder(QuoteSlip quoteSlip) throws Exception{
         ProductOrder productOrder = productOrderFactory.createProductOrder(quoteSlip);
+        productOrder = productOrderRemoteService.underWritting(productOrder);
         String underWrittingResult = productOrder.underWritting(productOrder);
         if(underWrittingResult.equals("核保失败") || underWrittingResult.equals("人工核保中")){
             //给被保人发送短信
