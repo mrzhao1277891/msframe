@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * Created by sunrun on 2018/4/20.
  */
-public class ProductOrderRemoteAdapter implements ProductOrderRemoteService {
+public class ProductOrderAdapter implements ProductOrderRemoteService {
     @Autowired
     UnderWrittingClient underWrittingClient;
 

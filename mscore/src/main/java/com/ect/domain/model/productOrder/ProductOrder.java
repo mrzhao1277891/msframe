@@ -1,8 +1,5 @@
 package com.ect.domain.model.productOrder;
 
-import com.ect.domain.remoteServices.ProductOrderRemoteService;
-import com.ect.infrastructure.translator.product.ProductOrderRemoteServiceImpl;
-
 /**
  * Created by zhaojun on 2018/4/6.
  */

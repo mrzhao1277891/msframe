@@ -8,7 +8,7 @@ import com.ect.domain.model.productOrder.ProductOrder;
  * 从其他上下文获取对象调用接口实现。
  * ProductOrderRemoteAdapter、UserAdapter分别负责请求订单上下文和用户上下文并取得原始结果
  */
-public class ProductOrderRemoteAdapter implements ProductOrderRemoteService {
+public class ProductAdapter implements ProductOrderRemoteService {
 
     public ProductOrder underWritting(ProductOrder productOrder) throws Exception{
         try {

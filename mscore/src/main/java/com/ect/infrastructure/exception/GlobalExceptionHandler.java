@@ -1,6 +1,6 @@
 package com.ect.infrastructure.exception;
 
-import com.ect.integration.rpcService.dto.ErrorInfo;
+import com.ect.infrastructure.facade.rpcService.dto.ErrorInfo;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
