@@ -10,9 +10,14 @@ import com.ect.domain.model.productOrder.ProductOrder;
  */
 public class ProductAdapter implements ProductOrderRemoteService {
 
+    ProductTranslator productTranslator;
+
     public ProductOrder underWritting(ProductOrder productOrder) throws Exception{
         try {
             //根据productId向商品上下文请求product对象。
+            String result = "";
+            productTranslator.translateRstToProduct(productOrder, result);
+
             return new ProductOrder();
         }catch (Exception e){
             throw e;
